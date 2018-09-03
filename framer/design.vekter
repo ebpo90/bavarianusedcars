@@ -7093,7 +7093,7 @@
             "left" : 125,
             "locked" : false,
             "name" : "filterApplied",
-            "opacity" : 1,
+            "opacity" : 0,
             "parentid" : "vTsyaz11V",
             "radius" : 0,
             "radiusBottomLeft" : 0,
