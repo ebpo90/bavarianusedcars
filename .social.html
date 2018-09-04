@@ -33,7 +33,7 @@
 	<script src="framer/framer.generated.js?nocache=9c5f961481bbdab5207142617c00f5ee"></script>
 	<script src="framer/framer.modules.js?nocache=16ddf72fafc6eb6c415ccacc0f41eb4b"></script>
 	<script src="framer/framer.vekter.js"></script>
-	<script>Framer.Device.hideBezel = false</script><script>document.addEventListener("DOMContentLoaded", function() {window.__framerClientCodeId = 327;window.__framerNew = function (n,loc,th,i){if (i == null) { return i };i.__framerInstanceInfo = _.defaults({name:n,location:loc,hash:th},i.__framerInstanceInfo);_.defaults(i.__framerInstanceInfo,{name:"Untitled"});return i;};window.__framerAnimation = function (th,a){if (a.isNoop === true) {return a;};var l = a.layer;if (l == null) { return a; };if (l.__framerAnimationInfo == null) {l.__framerAnimationInfo = {};};l.__framerAnimationInfo[th] = {originalState:a._originalState, destinationProperties: a.properties, destinationOptions: a.options};return a;};(function() {
+	<script>Framer.Device.hideBezel = false</script><script>document.addEventListener("DOMContentLoaded", function() {window.__framerClientCodeId = 488;window.__framerNew = function (n,loc,th,i){if (i == null) { return i };i.__framerInstanceInfo = _.defaults({name:n,location:loc,hash:th},i.__framerInstanceInfo);_.defaults(i.__framerInstanceInfo,{name:"Untitled"});return i;};window.__framerAnimation = function (th,a){if (a.isNoop === true) {return a;};var l = a.layer;if (l == null) { return a; };if (l.__framerAnimationInfo == null) {l.__framerAnimationInfo = {};};l.__framerAnimationInfo[th] = {originalState:a._originalState, destinationProperties: a.properties, destinationOptions: a.options};return a;};(function() {
   var buttonLabels, buttons, checkCompareState, checkFavState, checkFilterSection, checkState, comparisonList, favorited, filterBar, filterButtonBar, filterNavigation, i, j, k, len, mainNavigation, star, stars,
     indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
@@ -41,8 +41,8 @@
 
   Framer.DeviceView.Devices["custom"] = {
     "deviceType": "web",
-    "screenWidth": 1440,
-    "screenHeight": 920,
+    "screenWidth": 1920,
+    "screenHeight": 1100,
     "contentScale": 1,
     "devicePixelRatio": 1
   };
@@ -159,6 +159,13 @@
     return checkState();
   });
 
+  backToList.onClick(function() {
+    mainNavigation.showNext(list1, {
+      animate: false
+    });
+    return checkState();
+  });
+
   gasType.onClick(function() {
     return gasSelector.opacity = 1;
   });
@@ -227,7 +234,7 @@
     return klimaCheck.stateCycle();
   });
 
-  filterBar = window.__framerNew("filterBar", "136:16-143:0", "#ad580a59",new Layer({
+  filterBar = window.__framerNew("filterBar", "140:16-147:0", "#d2556c20",new Layer({
     width: 1186,
     height: 42,
     x: Align.center(),
@@ -320,7 +327,7 @@
   checkFavState = function() {
     favNumber.text = favorited.length;
     if (favNumber.text !== "0") {
-      return window.__framerAnimation("#167176af9",favNotification.animate('appear'));
+      return window.__framerAnimation("#13ab057fd",favNotification.animate('appear'));
     } else {
       return favNotification.opacity = 0;
     }
@@ -333,7 +340,7 @@
   checkCompareState = function() {
     comparisonNumber.text = comparisonList.length;
     if (comparisonNumber.text !== "0") {
-      return window.__framerAnimation("#103ded319",compareNotification.animate('appear'));
+      return window.__framerAnimation("#d777c01d",compareNotification.animate('appear'));
     } else {
       return compareNotification.opacity = 0;
     }
@@ -357,7 +364,7 @@
     compareOn1.stateCycle();
     if (indexOf.call(comparisonList, compareOn1) < 0) {
       comparisonList.push(compareOn1);
-      window.__framerAnimation("#13d7bbada",compareNotificationBar.animate('appear'));
+      window.__framerAnimation("#167f78433",compareNotificationBar.animate('appear'));
       Utils.delay(5, function() {
         return compareNotificationBar.stateSwitch('hidden');
       });
@@ -375,7 +382,7 @@
     compareOn2.stateCycle();
     if (indexOf.call(comparisonList, compare2) < 0) {
       comparisonList.push(compare2);
-      window.__framerAnimation("#16e7d4b54",compareNotificationBar.animate('appear'));
+      window.__framerAnimation("#142163858",compareNotificationBar.animate('appear'));
       Utils.delay(5, function() {
         return compareNotificationBar.stateSwitch('hidden');
       });
@@ -393,7 +400,7 @@
     compareOn3.stateCycle();
     if (indexOf.call(comparisonList, compare3) < 0) {
       comparisonList.push(compare3);
-      window.__framerAnimation("#113c3dbb9",compareNotificationBar.animate('appear'));
+      window.__framerAnimation("#13e3fa512",compareNotificationBar.animate('appear'));
       Utils.delay(5, function() {
         return compareNotificationBar.stateSwitch('hidden');
       });
@@ -411,7 +418,7 @@
     compareOn4.stateCycle();
     if (indexOf.call(comparisonList, compare4) < 0) {
       comparisonList.push(compare4);
-      window.__framerAnimation("#db070d32",compareNotificationBar.animate('appear'));
+      window.__framerAnimation("#ae9ffa36",compareNotificationBar.animate('appear'));
       Utils.delay(5, function() {
         return compareNotificationBar.stateSwitch('hidden');
       });
@@ -436,11 +443,14 @@
         time: 0.5
       }
     };
+    star.onMouseOver(function() {
+      return this.style.cursor = 'pointer';
+    });
     star.onClick(function() {
       this.stateCycle("favon", "favoff");
       if (indexOf.call(favorited, this) < 0) {
         favorited.push(this);
-        window.__framerAnimation("#103e919c0",favNotificationBar.animate('appear'));
+        window.__framerAnimation("#9831599b",favNotificationBar.animate('appear'));
         Utils.delay(5, function() {
           return favNotificationBar.stateSwitch('hidden');
         });
@@ -453,11 +463,11 @@
 
   checkState();
 
-  filterNavigation = window.__framerNew("filterNavigation", "326:23-333:0", "#ef42bd32",new FlowComponent({
+  filterNavigation = window.__framerNew("filterNavigation", "332:23-339:0", "#e40278b7",new FlowComponent({
     width: 1228,
     height: 800,
     x: Align.center,
-    y: 130,
+    y: 80,
     visible: false,
     backgroundColor: "#F6F6F6"
   }));
@@ -467,7 +477,7 @@
   buttons = [];
 
   for (i = k = 0; k < 6; i = ++k) {
-    filterButtonBar = window.__framerNew("filterButtonBar", "341:23-362:0", "#9a314174",new TextLayer({
+    filterButtonBar = window.__framerNew("filterButtonBar", "347:23-368:0", "#109784eae",new TextLayer({
       name: buttonLabels[i],
       y: 0,
       x: 198 * i,
@@ -476,7 +486,7 @@
       backgroundColor: "#1C69D4",
       borderColor: "#fff",
       borderWidth: 1,
-      fontFamily: "HelveticaNeue",
+      fontFamily: "Helvetica, sans-serif",
       color: "#fff",
       fontSize: 16,
       fontWeight: "bold",
@@ -502,6 +512,9 @@
   }
 
   checkFilterSection = function() {
+    Utils.delay(0.5, function() {
+      return filterNavigation.y = 74;
+    });
     if (filterNavigation.current.name === 'filterModel') {
       buttons[0].stateSwitch('active');
       buttons[1].stateSwitch('default');
@@ -566,6 +579,7 @@
     if (filterNavigation.visible === false) {
       mainNavigation.showOverlayCenter(filterNavigation);
       filterNavigation.showNext(detailFilter);
+      filterNavigation.y = 74;
     } else {
       filterNavigation.showNext(detailFilter);
     }
