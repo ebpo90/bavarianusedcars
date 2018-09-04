@@ -87,14 +87,25 @@ comparisonLink.onClick ->
 backToList.onClick ->
 	mainNavigation.showNext(list1, animate: false)
 	checkState()		
-
+backToList2.onClick ->
+	mainNavigation.showNext(list1, animate: false)
+	checkState()		
+backToList3.onClick ->
+	mainNavigation.showNext(list1, animate: false)
+	checkState()			
+	
 gasType.onClick ->
 	gasSelector.opacity = 1
-
+	
+gasType.onMouseOver -> 
+		@style.cursor = 'pointer'
+		
 gasSelector.onClick ->
 	gasTypeText.text = "Diesel"
 	gasSelector.opacity = 0
-	
+
+gasSelector.onMouseOver -> 
+		@style.cursor = 'pointer'
 	
 vonKm.onClick ->
 	kmMinSelector.opacity = 1
@@ -102,7 +113,9 @@ vonKm.onClick ->
 kmMinSelector.onClick ->
 	vonKmLabel.text = "100.000 km"
 	kmMinSelector.opacity = 0
-	
+vonKm.onMouseOver -> 
+		@style.cursor = 'pointer'
+		
 	
 bisKm.onClick ->
 	kmMaxSelector.opacity = 1
@@ -110,6 +123,13 @@ bisKm.onClick ->
 kmMaxSelector.onClick ->
 	bisKmLabel.text = "120.000 km"
 	kmMaxSelector.opacity = 0	
+
+bisKm.onMouseOver -> 
+		@style.cursor = 'pointer'
+kmMaxSelector.onMouseOver -> 
+		@style.cursor = 'pointer'
+kmMinSelector.onMouseOver -> 
+		@style.cursor = 'pointer'					
 	
 priceVon.onClick ->
 	priceMinSelector.opacity = 1
@@ -121,6 +141,15 @@ priceMinSelector.onClick ->
 priceBis.onClick ->
 	priceMaxSelector.opacity = 1
 
+priceBis.onMouseOver -> 
+		@style.cursor = 'pointer'
+priceVon.onMouseOver -> 
+		@style.cursor = 'pointer'
+priceMaxSelector.onMouseOver -> 
+		@style.cursor = 'pointer'
+priceMinSelector.onMouseOver -> 
+		@style.cursor = 'pointer'						
+
 priceMaxSelector.onClick ->
 	priceBisLabel.text = "60.000€"
 	priceMaxSelector.opacity = 0				
@@ -130,6 +159,9 @@ saveSearch2.onClick ->
 	mainNavigation.showOverlayCenter(loginScreen)	
 loginFrame.onClick ->
 	mainNavigation.showPrevious()
+
+loginFrame.onMouseOver -> 
+		@style.cursor = 'pointer'	
 
 klimaCheck.states.on =
 	opacity: 1
@@ -145,6 +177,9 @@ filterBar = new Layer
 	y: 88
 # 	parent: mainNavigation
 	backgroundColor: "#F6F6F6"	
+	
+klimaSelector.onMouseOver -> 
+		@style.cursor = 'pointer'	
 
 checkState = ->	
 	if mainNavigation.current == list1
@@ -318,6 +353,38 @@ for star in stars
 		
 	star.onMouseOver -> 
 		@style.cursor = 'pointer'	
+		
+	seriesLabel1_1.onMouseOver -> 
+		@style.cursor = 'pointer'
+	seriesSelector.onMouseOver -> 
+		@style.cursor = 'pointer'
+	
+	seriesLabel2_1.onMouseOver -> 
+		@style.cursor = 'pointer'
+	seriesSelector2.onMouseOver -> 
+		@style.cursor = 'pointer'	
+		
+	compare1.onMouseOver -> 
+		@style.cursor = 'pointer'
+	compare2.onMouseOver -> 
+		@style.cursor = 'pointer'
+	compare3.onMouseOver -> 
+		@style.cursor = 'pointer'
+	compare4.onMouseOver -> 
+		@style.cursor = 'pointer'
+	saveSearch1.onMouseOver -> 
+		@style.cursor = 'pointer'
+	saveSearch2.onMouseOver -> 
+		@style.cursor = 'pointer'
+	backToList.onMouseOver -> 
+		@style.cursor = 'pointer'	
+	backToList2.onMouseOver -> 
+		@style.cursor = 'pointer'	
+	backToList3.onMouseOver -> 
+		@style.cursor = 'pointer'					
+	stickyButtonsModel.onMouseOver -> 
+		@style.cursor = 'pointer'
+					
 	star.onClick ->
 		this.stateCycle("favon", "favoff")
 		if this not in favorited 
@@ -376,6 +443,9 @@ for i in [0...6]
 # 		shadowY: 2
 		options: 
 			time: 0.5
+	
+	filterButtonBar.onMouseOver -> 
+		@style.cursor = 'pointer'		
 	
 	buttons.push(filterButtonBar)
 	
