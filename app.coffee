@@ -5,7 +5,7 @@ document.body.style.cursor = "auto"
 Framer.DeviceView.Devices["custom"] =
 "deviceType": "web"
 "screenWidth": 1920
-"screenHeight": 920
+"screenHeight": 1100
 "contentScale": 1
 "devicePixelRatio": 1
 
