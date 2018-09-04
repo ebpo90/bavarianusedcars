@@ -84,6 +84,10 @@ comparisonLink.onClick ->
 	else
 	checkState()	
 
+backToList.onClick ->
+	mainNavigation.showNext(list1, animate: false)
+	checkState()		
+
 gasType.onClick ->
 	gasSelector.opacity = 1
 
@@ -312,6 +316,8 @@ for star in stars
 		options: 
 			time: 0.5
 		
+	star.onMouseOver -> 
+		@style.cursor = 'pointer'	
 	star.onClick ->
 		this.stateCycle("favon", "favoff")
 		if this not in favorited 
