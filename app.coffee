@@ -328,7 +328,7 @@ filterNavigation = new FlowComponent
 	width: 1228
 	height: 800
 	x: Align.center
-	y: 130
+	y: 80
 	visible: false
 	backgroundColor: "#F6F6F6"
 
@@ -380,6 +380,8 @@ for i in [0...6]
 
 
 checkFilterSection = ->
+	Utils.delay 0.5, ->
+		filterNavigation.y = 74
 	if filterNavigation.current.name == 'filterModel'
 		buttons[0].stateSwitch('active')
 		buttons[1].stateSwitch('default')	
@@ -431,14 +433,15 @@ buttons[0].onClick ->
 	if filterNavigation.visible == false
 		mainNavigation.showOverlayCenter(filterNavigation)
 		filterNavigation.showNext(filterModel)
+
 	else 
 		filterNavigation.showNext(filterModel)	
-	checkFilterSection()
-	
+	checkFilterSection()		
 buttons[1].onClick ->
 	if filterNavigation.visible == false
 		mainNavigation.showOverlayCenter(filterNavigation)
 		filterNavigation.showNext(detailFilter)
+		filterNavigation.y = 74
 	else 
 		filterNavigation.showNext(detailFilter)
 	checkFilterSection()
