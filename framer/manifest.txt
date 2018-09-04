@@ -114,6 +114,7 @@ framer/coffee-script.js
 framer/framer.init.js
 framer/framer.js
 README.md
+.git/index.lock
 .git/ORIG_HEAD
 .git/config
 .git/objects/61/9463fee5942977b458a096bb365bc0fd185ff6
@@ -281,6 +282,7 @@ README.md
 .git/objects/fb/1a2cb247c30970e068854eb99bee3c37fde82e
 .git/objects/ed/aa922310d542b85f387fcfccce749c6f29dd59
 .git/objects/ed/660c2395c6e710e792fb2a28c85878d96bb008
+.git/objects/c6/c80a9870e915670d8ad8a530f291727dfdc8e6
 .git/objects/ec/ce46c9730abd94c15f40120053639b91f07953
 .git/objects/ec/a7c683612095bb01a1c1049a8148a441e6b3b1
 .git/objects/ec/0f66ce5fb33c1298bf860c7ac4d9726149e589
@@ -432,6 +434,7 @@ README.md
 .git/objects/6c/424ff1cf09aad05eeea9372165c3d2e8ed3bbb
 .git/objects/6c/d73c78769a4aef4a4cc7ebce90d17496cbe01a
 .git/objects/39/bf2b96e825b0d757f4a0961dcf02000ef578dc
+.git/objects/39/ab26159fef0063f3926346967df93ae92d3a79
 .git/objects/99/179d0f61041d3b31e5d38972554cf9b77be9e4
 .git/objects/52/55595e16e0905c96e68d5a88a24043c33180e8
 .git/objects/97/0b0ce016eaab0ac1508e36f2da37b93e3cbfc7
@@ -458,6 +461,7 @@ README.md
 .git/objects/d4/227b2c8a2ae90f5d2dc5c13605c21f9bd4ed92
 .git/objects/ba/4b575a20a6f486aa983b719e57b5bc4393de30
 .git/objects/ba/16fb00aea52eeb66ba13071630c6d7090a150c
+.git/objects/ba/bd73afe5b97986e7284627b7448811a0774933
 .git/objects/ba/908a002f5337e9e137cf6985c0d90e9d083213
 .git/objects/ba/891d5d61a2edc3c7bd5aa9d30b652caef16183
 .git/objects/a0/052c4363b5280147f684635d2b0106ff6ac4c9
@@ -601,6 +605,7 @@ README.md
 .git/objects/12/5fae49bd10173b2d5d8ecb87b3eaa6b5db4ffb
 .git/objects/12/84e8b3a30ce46876dd948fe2632e5ad72ea53d
 .git/objects/12/81c9606a914867e332114423be6c99e3177d23
+.git/objects/8c/78135f86df9519597ce4c0f1519f8e9efeb295
 .git/objects/8c/e6058b0afa414de19b58d94889d9cfa252c7eb
 .git/objects/8c/95155a183c4962c2ad9b611fa6487fd0050606
 .git/objects/85/911cb313b99fd5fb05a1f24e43dd822a3cad56
