@@ -4,7 +4,7 @@ document.body.style.cursor = "auto"
 
 Framer.DeviceView.Devices["custom"] =
 "deviceType": "web"
-"screenWidth": 1440
+"screenWidth": 1920
 "screenHeight": 920
 "contentScale": 1
 "devicePixelRatio": 1
@@ -348,7 +348,7 @@ for i in [0...6]
 		backgroundColor: "#1C69D4"
 		borderColor: "#fff"
 		borderWidth: 1
-		fontFamily: "HelveticaNeue"
+		fontFamily: "Helvetica, sans-serif"
 		color: "#fff"
 		fontSize: 16
 		fontWeight: "bold"
