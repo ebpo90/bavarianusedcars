@@ -41,7 +41,7 @@ compareSwitch2.onClick ->
 	mainNavigation.showNext(comparison1, animate: false)	
 	checkState()	
 
-mainNavigation.showNext home1
+mainNavigation.showNext home2
 filterMask.onClick ->
 	mainNavigation.showNext(list1, animate: false)
 	checkState()
@@ -51,7 +51,7 @@ filterMask2.onClick ->
 	checkState()
 	
 homeLink.onClick ->	
-	mainNavigation.showNext(home1, animate: false)
+	mainNavigation.showNext(home2, animate: false)
 	checkState()
 	
 seriesLabel1_1.onClick ->
